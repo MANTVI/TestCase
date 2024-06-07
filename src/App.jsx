@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import FormComponent from './FormComponent';
+import Cards from './Cards';
 import './App.css'
 
 function App() {
@@ -7,8 +8,16 @@ function App() {
 
   return (
     <>
-    
-      <FormComponent />
+       <div className="container">
+            <div className="email">
+              <FormComponent/>
+            </div>
+            <div className="card">
+            <Cards />
+            </div>
+            
+      </div>
+      {/* <FormComponent /> */}
     
     </>
   )

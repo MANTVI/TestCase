@@ -25,14 +25,16 @@ const FormComponent = () => {
       setError('Invalid email format');
       return;
     }
+    // without response here also validation  check
+    // if (email.endsWith('@ez.works')) { 
 
-    if (email.endsWith('@ez.works')) {
-      setError('Email ending with @ez.works is not allowed');
-      return;
-    }
+    //       setError('Email ending with @ez.works is not allowed');
+
+    //   return;
+    // }
 
     try {
-      const response = await fetch('http://3.228.97.110:9000/api', {
+      const response = await fetch('http://34.225.132.160:8002/api', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -43,7 +45,16 @@ const FormComponent = () => {
       if (response.status === 200) {
         setMessage('Form Submitted');
       } else if (response.status === 422) {
-        setError('Invalid email ending');
+        if (email.endsWith('@ez.works')) {
+
+          setError('Email ending with @ez.works is not allowed');
+
+          return;
+        } else {
+          setError('Invalid email ending');
+        }
+
+
       }
     } catch (err) {
       setError('Error submitting the form');
