@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import FormComponent from './FormComponent';
 import Cards from './Cards';
 import './App.css'
+import Email from './Email';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,14 +10,14 @@ function App() {
     <>
        <div className="container">
             <div className="email">
-              <FormComponent/>
+             {<Email/>}
             </div>
-            <div className="card">
-            <Cards />
+            <div className="cardss">
+            {<Cards />}
             </div>
             
       </div>
-      {/* <FormComponent /> */}
+      
     
     </>
   )

@@ -65,18 +65,22 @@ const FormComponent = () => {
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+          <div className='input'>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className='submit'>
+            <button type="submit">Contact Me</button>
+          </div>
+         
         </div>
         {error && <div className="error">{error}</div>}
-        {message && <div className="message">{message}</div>}
-        <button type="submit">Submit</button>
+          {message && <div className="message">{message}</div>}
       </form>
     </div>
   );

@@ -1,28 +1,36 @@
 .container {
- 
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  margin: auto;
   justify-content: space-between;
-  width: 1080px;
+  padding: 50px;
   
 }
-.email {
-  /* max-width: 50%;
-  min-width: 390px; Minimum width for each item to allow wrapping */
-  min-width: 325px;
-  margin: 10px; /* Space around each item */
-  /* background-color:black; */
-  border: 2px red;
+
+.email{
+  width: 570px;
+  height: 80vh;
+  /* background-color: black; */
+  margin-bottom: 20px; /* Add some space between elements */
 }
-.card {
-  width: 325px; /*Minimum width for each item to allow wrapping */
-  margin: 10px; /* Space around each item */
-  /* background-color:blue; */
-  border: 2px  red;
+.cardss {
+  display: flex;
+
+  width: 690px;
+  height: 80vh;
+  /* background-color:red; */
+  margin-bottom: 20px; /* Add some space between elements */
+
 }
 
-/* @media only screen and (min-width:480px) and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
+  
   .container {
-    width: 100%; */
+    flex-direction: column;
+    /* width: 100%; */
+   
+  }
+  .email{
+    height: 120vh;
   }
 }
