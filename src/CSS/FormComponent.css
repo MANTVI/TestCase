@@ -86,14 +86,20 @@ button[type="submit"] {
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
+
     
   }
   
   .form-group .submit {
-    width: 70%;
-    height: 10%;
+    width: 100%;
+    height: 2%;
+    /* margin-bottom: %; */
    
   }
+  .form-container .error{
+    margin-bottom: 5%;
+  }
+
 
 }
 
