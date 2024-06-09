@@ -1,0 +1,98 @@
+/* FormComponent.css */
+
+.form-container {
+  display: flex;
+  /* justify-content:; */
+  /* align-items: ; */
+  /* height: 100vh; */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding-right: 5%; */
+  width: 400px;
+
+}
+
+.input, .submit {
+  display: inline-block;
+}
+
+.input {
+  width: 68%;
+}
+
+.submit {
+  width: 30%;
+  display: inline-block;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners to the input field */
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* button[type="submit"]:hover {
+  background-color: #45a049;
+} */
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.message {
+  color: green;
+  margin-top: 10px;
+}
+
+
+  @media (max-width: 768px) {
+    .form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
+
+
+  .form-group  {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-group .input {
+    flex-direction: column;
+    width: 100%;
+
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .form-group .submit {
+    width: 70%;
+    height: 10%;
+   
+  }
+
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import FormComponent from './FormComponent'
 import EZ from './image/EZ.png'
-import './Email.css'
+import './CSS/Email.css'
 
 function Email() {
     return (

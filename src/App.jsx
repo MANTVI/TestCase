@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Cards from './Cards';
-import './App.css'
+import './CSS/App.css'
 import Email from './Email';
 
 function App() {
