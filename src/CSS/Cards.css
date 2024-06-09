@@ -21,4 +21,24 @@
       height: 100%;
     }
   }
+  @media (min-width: 1370px) and (min-width: 1371px){
+    .cards-container{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+    }
+    
+    .card {
+      width: 23%;
+      background-color: black;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+  }
   

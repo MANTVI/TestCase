@@ -1,5 +1,6 @@
 .container {
   display: flex;
+ 
   /* flex-wrap: wrap; */
   margin: auto;
   justify-content: space-between;
@@ -34,3 +35,42 @@
     height: 120vh;
   }
 }
+@media screen and (min-width: 1371px)  {
+  .container {
+    width: 100%;
+    /* You can add specific styles for large screens here */
+    padding: 100px; /* Example: Increase padding */
+  }
+  
+  .email {
+    width: 800px; /* Example: Increase width */
+    height: 90vh; /* Example: Adjust height */
+    /* background-color: #f0f0f0; */ /* Example: Add background color */
+  }
+  
+  .cardss {
+    width: 900px; /* Example: Increase width */
+    height: 90vh; /* Example: Adjust height */
+    /* background-color: #e0e0e0; */ /* Example: Add background color */
+  }
+}
+
+@media screen and (min-width: 2101px) {
+  .container {
+    padding: 100px; /* Example: Increase padding */
+    justify-content: space-around; /* Example: Adjust justification */
+  }
+
+  .email {
+    width: 800px; /* Example: Increase width */
+    height: 90vh; /* Example: Adjust height */
+    margin-bottom: 30px; /* Example: Increase margin between elements */
+  }
+
+  .cardss {
+    width: 1000px; /* Example: Increase width */
+    height: 90vh; /* Example: Adjust height */
+    margin-bottom: 30px; /* Example: Increase margin between elements */
+  }
+}
+

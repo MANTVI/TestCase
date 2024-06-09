@@ -65,4 +65,26 @@
 
     }
   }
+
+  @media screen and (min-width: 1371px) {
+    .email-header img {
+      height: 150px; /* Example: Increase height */
+      width: 450px; /* Example: Increase width */
+    }
+  
+    .email-header h2 {
+      height: 70px; /* Example: Adjust height */
+      width: 1200px; /* Example: Adjust width */
+      font-size: 56px; /* Example: Increase font size */
+      line-height: 70px; /* Example: Adjust line height */
+    }
+  
+    .email .email-content p {
+      width: 600px; /* Example: Increase width */
+      height: 150px; /* Example: Adjust height */
+      font-size: 36px; /* Example: Increase font size */
+      line-height: 45px; /* Example: Adjust line height */
+    }
+  }
+    
   

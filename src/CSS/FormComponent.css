@@ -96,3 +96,40 @@ button[type="submit"] {
   }
 
 }
+
+@media screen and (min-width: 1371px)  {
+  .form-container {
+    /* Adjust the height to better utilize the space on larger screens */
+    height: 80vh; /* Example: Decrease height */
+    margin-top: 20%;
+
+  }
+
+  .form-group {
+    width: 600px; /* Example: Increase width */
+    /* Add padding to the right to give more space */
+    padding-right: 10%; /* Example: Add padding */
+  }
+
+  .input {
+    width: 70%; /* Example: Adjust width */
+  }
+
+  .submit {
+    width: 28%; /* Example: Adjust width */
+  }
+
+  input[type="email"] {
+    padding: 12px; /* Example: Increase padding */
+    font-size: 16px; /* Example: Increase font size */
+  }
+
+  button[type="submit"] {
+    padding: 12px; /* Example: Increase padding */
+    font-size: 16px; /* Example: Increase font size */
+  }
+
+  .error, .message {
+    font-size: 18px; /* Example: Increase font size */
+  }
+}
